@@ -1,0 +1,197 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     font-family:"Open Sans", sans-serif;
+     font-size: 16px;
+     line-height:1.5;
+     color:rgb(0, 0, 0);
+     text-rendering: optimizeLegibility;
+}
+
+a {
+     text-decoration:none;
+}
+
+ul {
+     list-style-type: none;
+}
+
+a:visited {
+     color:inherit;
+}
+
+/******************************************
+/* NAVBAR
+/*******************************************/
+.navbar {
+     height: 100px;
+     background-color: white;
+}
+
+nav .container {
+     display:flex; 
+     align-items:center;
+     height:100%;
+}
+nav .container ul {
+     display: flex;
+     justify-content: space-between;
+     margin:0 5%;
+     width:100%;
+}
+
+.leftSide, .rightSide {
+     display:flex;
+     padding-top:20px;
+     font-weight: 600;
+     font-size:1.2rem;
+}
+.navbar a {
+     color:rgb(15, 11, 11);
+     font-size:16px;
+}
+ 
+
+.navbar ul li {
+     margin-left: 30px;
+}
+
+.navbar ul li:first-child {
+     margin-left:0px;
+}
+.logo {
+     margin-left:-70px;
+}
+.logo img {
+     width:120px;
+     height:auto;
+}
+header {
+     margin-top:50px;
+     height:35vw;
+}
+
+header .container {
+     display:flex;
+     
+}
+
+header .container {
+     width:94%;
+     margin:0 auto;
+}
+
+.container section {
+     text-align: center;
+     width:100%;
+     height:100%;
+}
+header img {
+     width:93%;
+     border-radius: 3%;
+}
+
+.label {
+     display:flex;
+     justify-content: center;
+     align-items: center;
+     position:relative;
+     height:3vw;
+     margin:0 auto;
+     margin-top:-35%;
+     width:25%;
+     background:white;
+     text-transform: uppercase;
+     font-weight: 800;
+     font-size:0.9vw;
+     border-radius:3%;
+     letter-spacing: 1.1px;
+     
+}
+
+.lichens .label:hover, 
+.wood .label:hover {
+     background-color: black;
+     color:white;
+}
+
+
+
+main h2 {
+     font-size:2.1vw;
+     text-align:center;
+     
+     margin-bottom:2vw;
+     
+}
+
+main .firstSection, 
+main .secondSection {
+     display:flex;
+     width:93%;
+     margin:0 auto;
+
+}
+
+main .firstSection img, 
+main .secondSection img {
+     width: 92%;
+     border-radius: 2%;
+}
+
+main section span {
+     display:block;
+}
+
+.secondH2 {
+     margin-top:3%;
+}
+
+.lastH2 {
+     margin-top:3%;
+}
+
+.thirdSection {
+     text-align: center;
+     
+}
+
+.thirdSection img {
+     width:80%;
+}
+.thirdSection p {
+     width:50%;
+     margin:0 auto;
+}
+
+footer {
+     margin-top:20%;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
