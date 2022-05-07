@@ -39,11 +39,10 @@ buttons.forEach(button => {
   })
 })
 
+//sortare cele mai vandute / noutati
 
 const thirdSection =  document.getElementsByClassName('thirdSection')[0]
-
 const buttonsSecond = document.querySelectorAll('[data-second]')
-
 buttonsSecond.forEach(button => {
     button.addEventListener('click', () => {
         const offs = button.dataset.second
