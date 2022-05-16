@@ -267,7 +267,7 @@ header section {
 }
 
 .carousel-button:focus {
-     outline: 1px solide black;
+     outline: 1px solid black;
 }
 
 .carousel-button.pref {
