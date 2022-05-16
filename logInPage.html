@@ -8,13 +8,14 @@
 		<meta name="viewport" content = "width=device-width, initial-scale=0">
 
         <!-- external CSS link -->
-        <link rel="stylesheet" href="css/logInPage.css">
+        
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="/css/loginPage.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+        
 		<!-- Icon -->
 		<link rel="apple-touch-icon-precomposed" sizes="57x57" href="icon/apple-touch-icon-57x57.png" />
 		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="icon/apple-touch-icon-114x114.png" />
@@ -40,102 +41,112 @@
 
     </head>
     <body>
-      <div class="container">
-        <div class="forms-container">
-          <div class="signin-signup">
-            <form action="#" class="sign-in-form">
-              <h2 class="title">Autentificare</h2>
-              <div class="input-field">
-                <i class="fas fa-user"></i>
-                <input type="text" placeholder="Username" />
-              </div>
-              <div class="input-field">
-                <i class="fas fa-lock"></i>
-                <input type="password" placeholder="Parola" />
-              </div>
-              <input type="submit" value="Login" class="btn solid" />
-              <p class="social-text"></p>
-              <div class="social-media">
-                <a href="#" class="social-icon">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="#" class="social-icon">
-                  <i class="fab fa-twitter"></i>
-                </a>
-                <a href="#" class="social-icon">
-                  <i class="fab fa-google"></i>
-                </a>
-                <a href="#" class="social-icon">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-              </div>
-            </form>
-            <form action="#" class="sign-up-form">
-              <h2 class="title">Inregistrare</h2>
-              <div class="input-field">
-                <i class="fas fa-user"></i>
-                <input type="text" placeholder="Username" />
-              </div>
-              <div class="input-field">
-                <i class="fas fa-envelope"></i>
-                <input type="email" placeholder="Email" />
-              </div>
-              <div class="input-field">
-                <i class="fas fa-lock"></i>
-                <input type="password" placeholder="Parola" />
-              </div>
-              <input type="submit" class="btn" value="Sign up" />
-              <p class="social-text"></p>
-              <div class="social-media">
-                <a href="#" class="social-icon">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="#" class="social-icon">
-                  <i class="fab fa-twitter"></i>
-                </a>
-                <a href="#" class="social-icon">
-                  <i class="fab fa-google"></i>
-                </a>
-                <a href="#" class="social-icon">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-              </div>
-            </form>
-          </div>
-        </div>
-  
-        <div class="panels-container">
-          <div class="panel left-panel">
-            <div class="content">
-              <h3>Prima oara pe site?</h3>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis,
-                ex ratione. Aliquid!
-              </p>
-              <button class="btn transparent" id="sign-up-btn">
-                Sign up
-              </button>
+            <nav class="navbar">
+                <div class="container">
+                     <ul>
+                         <div class="leftSide">
+                            <li>
+                                <a href="mailto:comenzi@atelierulmaxim.ro"><i class="fa-solid fa-envelope"></i> comenzi@atelierulmaxim.ro</a>
+                            </li>
+
+                         </div>
+                         <li> 
+                             <a class="logo" href="/index.html"><img src="/images/logo.jpeg" alt=""></a>
+                         </li>
+                         <div class="rightSide">
+
+
+                             <li>
+                                <a href="/logInPage.html"><i class="fa-solid fa-user"></i> Cont / Inregistrare</a>
+                             </li>
+
+                             <li>
+                            <a href="/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                         </li>
+                        </div>
+                     </ul> 
+
+                </div>
+            </nav>
+            <header>
+                <section>
+                    <div class="dropdown" data-dropdown>
+                        <button class="link" data-dropdown-button ><i class="fa-solid fa-bars"></i> Categorii Produse</button>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li>
+                                    <a href="#">Produse fizice</a>
+                                </li>
+                                <li>
+                                    <a href="#">Produse digitale</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="search-wrapper">
+                        <input type="search" class="search" placeholder="Cauta produse">
+                        <button type="submit" class="searchbar_button"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+                    </div>
+                </section>
+            </header>
+        <main>
+            <section class="firstSectioninLP">
+                <h1>Contul meu</h1>
+            </section>
+            <section class="secondSectioninLP">
+                <section class="autent">
+                    <h2>Autentificare</h2>
+                    <form class ="box" action="" method = 'post'>
+                        <span class="upperspan">Nume utilizator sau adresa email<span class="star">*</span></span>
+                        <input type="text" name="" placeholder="">
+                        <span class="upperspanSecond">Parola<span class="star">*</span></span>
+                        <input type="password" name="" placeholder="">
+                        <input type="submit" name="" value="Autentificare">
+                    </form>
+                    <section class="forgotP">
+                        <div>
+                            <input type="checkbox">
+                            <span>Tine minte</span>
+                        </div>
+                        <span><a href="">Ai pierdut parola?</a></span>
+                    </section>
+                    <section class="diffAut">
+                        <h3><span>Sau autentificare prin</span></h3>
+                        <section class="socialMedia">
+                            <i class="fa-brands fa-facebook-square"></i><input class="facebook" type="submit" name="" value="Facebook">
+                            <i class="fa-brands fa-google"></i><input class="google" type="submit" name="" value="Google">
+                        </section>
+                    </section>
+                </section>
+
+                <section class="inreg">
+                    <h2>Inregistrare</h2>
+                    <p>Înregistrarea pe AtelierulMaxim.ro vă permite să accesați starea și istoricul comenzii. Trebuie doar să completați câmpurile de mai jos și vom primi un cont nou creat în cel mai scurt timp. Vă vom solicita doar informațiile necesare pentru a face procesul de achiziție mai rapid și mai ușor.</p>
+                    <input class="buttonInreg" type="submit" name="" value="Inregistrare">
+                </section>
+            </section>
+        </main>
+        <footer>
+            <div class="footer">
+                <h4><a href="">AtelierulMaxim.ro</a></h4>
+                <section class="footerOne">
+                    <a href="#">Cont</a>
+                    |
+                    <a href="#">Cos</a>
+                </section>
+                <section class="footerTwo">
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook-square"></i></a>
+                    <a href=""><i class="fa-solid fa-envelope"></i></a>
+                </section>
+                <section class="footerThree">
+                    <span class="copyright" >Copyright <i class="fa-solid fa-copyright"></i>2022 All rights reserved | Made by: <a href="https://radu122t.github.io/MySite/">www.radu122t.io</a>  </span>
+                </section>
+
             </div>
-            <img src="img/log.svg" class="image" alt="" />
-          </div>
-          <div class="panel right-panel">
-            <div class="content">
-              <h3>Aveti deja cont?</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-                laboriosam ad deleniti.
-              </p>
-              <button class="btn transparent" id="sign-in-btn">
-                Sign in
-              </button>
-            </div>
-            <img src="img/register.svg" class="image" alt="" />
-          </div>
-        </div>
-      </div>
-  
-      <script src="/js/main.js"></script>
-      <script
-      src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous" ></script>
+        </footer>
+        <script src="/js/main.js"></script>
+        <script src="https://kit.fontawesome.com/167d4e62b2.js" crossorigin="anonymous"></script>
     </body>
-  </html>
+</html>
